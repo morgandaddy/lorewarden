@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lorewarden — The Warden of Your World's Lore</title>
+<meta name="description" content="Lorewarden is a native AI continuity engine for long-form fiction. Import your manuscripts, notes, and art — it builds your canon, flags contradictions, and keeps every timeline straight.">
+<style>
+  :root {
+    --ink: #1a1612;
+    --parchment: #f7f3ea;
+    --gold: #b98a2f;
+    --gold-soft: #e8d9b5;
+    --slate: #2b2620;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--parchment);
+    color: var(--ink);
+    line-height: 1.7;
+  }
+  header {
+    background: var(--ink);
+    color: var(--parchment);
+    text-align: center;
+    padding: 5rem 1.5rem 4rem;
+  }
+  header .sigil {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    letter-spacing: 0.08em;
+    font-variant: small-caps;
+    margin-bottom: 0.5rem;
+  }
+  .tagline {
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--gold-soft);
+    max-width: 34rem;
+    margin: 0 auto;
+  }
+  .badge {
+    display: inline-block;
+    margin-top: 1.75rem;
+    border: 1px solid var(--gold);
+    color: var(--gold-soft);
+    padding: 0.4rem 1.2rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-family: -apple-system, 'Segoe UI', sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 3.5rem 1.5rem; }
+  section { margin-bottom: 3rem; }
+  h2 {
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    font-size: 1.4rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--gold-soft);
+    padding-bottom: 0.4rem;
+  }
+  ul { list-style: none; }
+  ul li { margin-bottom: 0.9rem; padding-left: 1.75rem; position: relative; }
+  ul li::before {
+    content: "❧";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+  }
+  .steps { counter-reset: step; }
+  .steps li { counter-increment: step; }
+  .steps li::before {
+    content: counter(step);
+    font-family: -apple-system, 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: var(--parchment);
+    background: var(--gold);
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    top: 0.25rem;
+  }
+  .contact {
+    text-align: center;
+    background: var(--slate);
+    color: var(--parchment);
+    padding: 2.5rem 1.5rem;
+    border-radius: 8px;
+  }
+  .contact a { color: var(--gold-soft); }
+  footer {
+    text-align: center;
+    padding: 2rem 1.5rem 3rem;
+    font-size: 0.85rem;
+    color: #8a8175;
+    font-family: -apple-system, 'Segoe UI', sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="sigil">🕮</div>
+  <h1>Lorewarden</h1>
+  <p class="tagline">The warden of your world's lore — a native AI continuity engine for long-form fiction.</p>
+  <span class="badge">Coming Soon</span>
+</header>
+
+<main>
+  <section>
+    <h2>What it does</h2>
+    <ul>
+      <li><strong>Import everything.</strong> Manuscripts, notes, and art go in; a structured canon comes out.</li>
+      <li><strong>Flags contradictions</strong> — every one cited back to its source, so you can judge for yourself.</li>
+      <li><strong>Logs your rulings.</strong> When canon is disputed, your word is law, and it's on the record.</li>
+      <li><strong>Tracks timelines</strong> and what each character knows at every point in the story.</li>
+      <li><strong>Spoiler-safe outputs</strong> — share with collaborators without spilling the beans.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <ul class="steps">
+      <li>Bring your manuscripts, notes, and artwork.</li>
+      <li>Lorewarden builds your canon and watches for contradictions.</li>
+      <li>You rule on disputes; it keeps the timelines, the knowledge, and the secrets straight.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>From manuscript to print</h2>
+    <p>A production add-on carries approved manuscripts through illustration checks all the way to print-ready files — one continuous road from first draft to finished book.</p>
+  </section>
+
+  <section class="contact">
+    <h2 style="border: none; text-align: center;">Say hello</h2>
+    <p>Questions, early access, or just want to talk canon?<br>
+    <a href="mailto:hello@lorewarden.app">hello@lorewarden.app</a></p>
+  </section>
+</main>
+
+<footer>
+  © 2026 Lorewarden. All rights reserved.
+</footer>
+
+</body>
+</html>
