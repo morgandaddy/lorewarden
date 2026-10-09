@@ -91,6 +91,37 @@
     font-size: 0.85rem;
     top: 0.25rem;
   }
+  .proof-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+  @media (max-width: 40rem) {
+    .proof-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  .proof-grid a {
+    text-decoration: none;
+    color: var(--ink);
+    display: block;
+  }
+  .proof-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    display: block;
+    transition: transform 0.2s ease;
+  }
+  .proof-grid a:hover img { transform: translateY(-4px); }
+  .proof-grid .book-title {
+    display: block;
+    text-align: center;
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
   .contact {
     text-align: center;
     background: var(--slate);
@@ -141,6 +172,29 @@
   <section>
     <h2>From manuscript to print</h2>
     <p>A production add-on carries approved manuscripts through illustration checks all the way to print-ready files — one continuous road from first draft to finished book.</p>
+  </section>
+
+  <section>
+    <h2>Proof points</h2>
+    <p>These four books were created using the manual continuity workflows Lorewarden will automate — every character, timeline, and ruling tracked by hand, across the whole series.</p>
+    <div class="proof-grid">
+      <a href="https://www.amazon.com/dp/B0H5LT4W5H" target="_blank" rel="noopener">
+        <img src="covers/01-the-sad-glimwick.jpg" alt="The Sad Glimwick — book cover">
+        <span class="book-title">The Sad Glimwick</span>
+      </a>
+      <a href="https://www.amazon.com/dp/B0H5NSV1Q9" target="_blank" rel="noopener">
+        <img src="covers/02-the-day-gretchen-lost-her-hat.jpg" alt="The Day Gretchen Lost Her Hat — book cover">
+        <span class="book-title">The Day Gretchen Lost Her Hat</span>
+      </a>
+      <a href="https://www.amazon.com/dp/B0H5NZ7JQT" target="_blank" rel="noopener">
+        <img src="covers/03-the-too-magic-carpet.jpg" alt="The Too-Magic Carpet — book cover">
+        <span class="book-title">The Too-Magic Carpet</span>
+      </a>
+      <a href="https://www.amazon.com/dp/B0HK8ZR2MT" target="_blank" rel="noopener">
+        <img src="covers/04-the-island-of-stars.jpg" alt="The Island of Stars — book cover">
+        <span class="book-title">The Island of Stars</span>
+      </a>
+    </div>
   </section>
 
   <section class="contact">
